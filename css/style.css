@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 .header{
 	display: flex;
 	
@@ -11,9 +14,11 @@
 }
 .textbox{
 	width: 700px;
-	height: 38px;
+	height: 41px;
 	border-radius: 21px;
 	border: 1px solid #ccc;
+	cursor: pointer;
+	padding-left: 15px;
 }
 .imgSearch{
 	margin-left: -50px;
@@ -74,6 +79,10 @@
 	color: black;
 	text-decoration: none;
 	margin: 0px 10px; 	
+	cursor: pointer;
+}
+.link2:hover{
+	color: blue;
 }
 .content{
 	border-top: 1px solid #ccc;
@@ -81,6 +90,8 @@
 	display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: arial,sans-serif;
+    padding-bottom: 50px;
 }
 .content div{
 	width: 75%;
@@ -88,12 +99,17 @@
 .title{
 	color: #1a0dab;
 	font-size: 20px;
+	cursor: pointer;
+}
+.title:hover{
+	text-decoration: underline;
 }
 .link{
 	color: #006621;
 	margin: 0;
 	font-size: 16px;
-
+	cursor: pointer;
+	text-decoration: none;
 }
 .text{
 	max-width: 500px;
@@ -124,5 +140,38 @@
 	align-items: center;
 	display: flex;
 	width: 100%;
+
+}
+.pages-google{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content div:last-child{
+	display: flex;
+    width: 5%;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-top: 15px;
+}
+.content div a:last-child{
+    text-decoration: none;
+    margin: 8px 0px;
+    color: blueviolet;
+}
+.content div .page-google{
+	width: 83%;
+    display: initial;
+}
+.pages-google:hover,.page-google a:hover{
+	text-decoration: underline !important;
+	cursor: pointer;
+	color: #000;
+}
+.next-page{
+	font-size: 33px;
+	text-align: center;
+	margin: 0;
+    color: blueviolet;
 
 }
